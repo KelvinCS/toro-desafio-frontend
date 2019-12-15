@@ -3,14 +3,29 @@ import StockCard from "./index";
 
 export default { title: "StockCard" };
 
-export const low = () => <></>;
+export const low = () => (
+  <StockCard
+    history={[
+      { price: 10, timestamp: 10 },
+      { price: 5, timestamp: 11 },
+      { price: 7, timestamp: 12 }
+    ]}
+    logo={`https://cdn.toroinvestimentos.com.br/corretora/images/quote/PETR.svg`}
+    name="Pretrobras SA"
+    ticker="PETR4"
+  />
+);
 
-// export const withText = () => <Button>Hello Button</Button>;
+export const high = () => (
+  <StockCard
+    history={[
+      { price: 5, timestamp: 11 },
 
-// export const withEmoji = () => (
-//   <Button>
-//     <span role="img" aria-label="so cool">
-//       😀 😎 👍 💯
-//     </span>
-//   </Button>
-// );
+      { price: 10, timestamp: 10 },
+      { price: 7, timestamp: 12 }
+    ]}
+    logo={`https://cdn.toroinvestimentos.com.br/corretora/images/quote/PETR.svg`}
+    name="Pretrobras SA"
+    ticker="PETR4"
+  />
+);
