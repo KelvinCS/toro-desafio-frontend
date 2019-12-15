@@ -1,5 +1,5 @@
 export const formatCurrency = (value: number): string => {
-  return `R$ ${value.toString().replace(".", ",")}`;
+  return `R$ ${value.toFixed(2).replace(".", ",")}`;
 };
 
 export const removeLastChar = (value: string) => value.slice(0, -1);
