@@ -1,3 +1,4 @@
+[![CircleCI](https://circleci.com/gh/KelvinCS/toro-desafio-frontend/tree/master.svg?style=svg)](https://circleci.com/gh/KelvinCS/toro-desafio-frontend/tree/master)
 # Resposta ao desafio frontend da Toro
 
 ## Dependências
