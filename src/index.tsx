@@ -2,9 +2,10 @@ import React from "react";
 import ReactDOM from "react-dom";
 import App from "./App";
 import { resetContext, getContext } from "kea";
+import sagaPlugin from "kea-saga";
 import { Provider } from "react-redux";
 import { ThemeProvider } from "styled-components";
-import sagaPlugin from "kea-saga";
+
 import styles from "./styles";
 
 import * as serviceWorker from "./serviceWorker";
