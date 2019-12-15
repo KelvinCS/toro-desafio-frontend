@@ -37,15 +37,13 @@ function useSorter(list, sorter) {
 }
 
 export default function StockOptions() {
-  const { stocks: unsortedStocks } = useValues(stockLogic);
-
   const [sorter, setSorter] = useState(sorters.default);
+  const { stocks: unsortedStocks } = useValues(stockLogic);
+  const stocks = useSorter(unsortedStocks, sorter);
 
   const clickOnSortBy = (key: "lowest" | "highest") => {
     setSorter(sorter.key === key ? sorters.default : sorters[key]);
   };
-
-  const stocks = useSorter(unsortedStocks, sorter);
 
   return (
     <Content>
