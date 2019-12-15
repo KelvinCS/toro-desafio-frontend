@@ -35,7 +35,9 @@ jobs:
             - v1-dependencies-{{ checksum "package.json" }}
             - v1-dependencies-
 
-      - run: yarn test
+      - run: yarn test --collectCoverage=true
+      - store_artifacts:
+        path: coverage
 
 workflows:
   version: 2
