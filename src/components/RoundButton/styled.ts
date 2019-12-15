@@ -10,4 +10,5 @@ export const Button = styled.button`
   color: ${({ theme }) => theme.colors.white};
   border: none;
   outline: none;
+  transition: all 0.5s ease-in;
 `;
