@@ -1,6 +1,6 @@
-import StocksNameMock from "./stocks-name.mock.json";
+import stocksName from "./stocks-name.mock.json";
+import { removeLastChar } from "../lib";
 
-const stocksName: any = StocksNameMock;
 const STOCK_IMAGES_URL =
   "https://cdn.toroinvestimentos.com.br/corretora/images/quote";
 
@@ -8,7 +8,6 @@ interface StockInfo {
   ticker: string;
   name: string;
   image: string;
-  history: [];
 }
 
 const Stocks = {
@@ -16,8 +15,7 @@ const Stocks = {
     return {
       name: stocksName[ticker],
       ticker,
-      image: `${STOCK_IMAGES_URL}/${ticker.slice(0, -1)}.svg`,
-      history: []
+      image: `${STOCK_IMAGES_URL}/${removeLastChar(ticker)}.svg`
     };
   }
 };
