@@ -37,7 +37,7 @@ jobs:
 
       - run: yarn test --collectCoverage=true
       - store_artifacts:
-        path: coverage
+          - path: coverage
 
 workflows:
   version: 2
