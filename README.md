@@ -29,8 +29,8 @@ muita tomada de decisão e jogo de cintura.
 
 ```json
 {
-	["código-do-ativo"]:  "preço-do-ativo",
-	"timestamp" :  "data-da-movimentação"
+	"<código-do-ativo>":  "<preço-do-ativo>",
+	"timestamp" :  "<data-da-movimentação>"
 }
 ```
 
