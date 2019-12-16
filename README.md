@@ -25,3 +25,11 @@ Há dois tipos principais de testes no projeto: testes de unidade e de ui.
 Ambos podem ser rodados com os seguintes comandos:
 
 `yarn test` ou `npm run test`
+
+### Storybook
+
+O Storybook é uma ferramenta de documentação de componentes, 
+além de ser ótimo para testar a UI de elementos específicos.
+
+Rode `yarn storybook` na pasta do projeto e será mostrado um overview de alguns componentes e
+seus respectivos estados.
