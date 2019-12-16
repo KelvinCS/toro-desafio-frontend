@@ -17,6 +17,16 @@ services:
       - .:/app
     command: yarn test
 
+  app_storybook:
+    build:
+      context: .
+    volumes:
+      - node_modules:/app/node_modules
+      - .:/app
+    command: yarn storybook -p 6006
+    ports:
+      - 6006:6006
+
   app_dev:
     build:
       context: .
