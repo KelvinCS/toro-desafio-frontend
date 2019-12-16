@@ -1,0 +1,18 @@
+version: "3.7"
+
+volumes:
+  node_modules:
+
+services:
+  app_backend:
+    image: "toroinvestimentos/quotesmock"
+    ports:
+      - 8080:8080
+
+  app_prod:
+    container_name: app_prod
+    build:
+      context: .
+      dockerfile: Dockerfile.prod
+    ports:
+      - 3000:80

@@ -1,0 +1,28 @@
+version: "3.7"
+
+volumes:
+  node_modules:
+
+services:
+  app_backend:
+    image: "toroinvestimentos/quotesmock"
+    ports:
+      - 8080:8080
+
+  app_tests:
+    build:
+      context: .
+    volumes:
+      - node_modules:/app/node_modules
+      - .:/app
+    command: yarn test
+
+  app_dev:
+    build:
+      context: .
+    volumes:
+      - node_modules:/app/node_modules
+      - .:/app
+    command: yarn start
+    ports:
+      - 3000:3000
