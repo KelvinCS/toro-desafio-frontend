@@ -12,8 +12,8 @@
 
 ## Como rodar?
 
-> O projeto consta de duas partes principais: um container docker contendo a API da aplicação
-> e o frontend escrito em React. Após instalar as dependências, siga os passos:
+O projeto consta de duas partes principais: um container docker contendo a API da aplicação</br>
+e o frontend escrito em React. Após instalar as dependências, siga os passos:
 
 - Para rodar a api na porta 8080: `docker run -p 8080:8080 toroinvestimentos/quotesmock`
 - Na pasta do projeto rode `yarn install` ou `npm install` para instalar as dependências do front
@@ -21,15 +21,14 @@
 
 ### Testes automatizados
 
-Há dois tipos principais de testes no projeto: testes de unidade e de ui. 
+Há dois tipos principais de testes no projeto: testes de unidade e de ui. </br>
 Ambos podem ser rodados com os seguintes comandos:
 
 `yarn test` ou `npm run test`
 
 ### Storybook
 
-O Storybook é uma ferramenta de documentação de componentes, 
-além de ser ótimo para testar a UI de elementos específicos.
+O Storybook é uma ferramenta de documentação, onde consegue se testar visualmente componentes </br>
+e seus respectivos estados
 
-Rode `yarn storybook` na pasta do projeto e será mostrado um overview de alguns componentes e
-seus respectivos estados.
+- Rode `yarn storybook` na pasta do projeto
