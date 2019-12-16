@@ -37,6 +37,7 @@ export const ToolbarTitle = styled.h3`
 
 export const Content = styled.main`
   padding: 0 16px;
+  margin-bottom: 32px;
 
   @media (min-width: 650px) {
     padding: 0 50px;
