@@ -7939,6 +7939,11 @@ kea-saga@^1.0.1:
   dependencies:
     babel-runtime "^6.26.0"
 
+kea@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/kea/-/kea-1.0.0.tgz#892bb4c2b0a243f1b0c05af8fefba0612b501f7d"
+  integrity sha512-FM9lCwvfsPPQHTeIk4XQfKKLBPKKcEz3cKprZwwLHzWUnf2UxdjgiRPfLB5XvrtrmyyZVFR8cIpataCZ+gO6Aw==
+
 killable@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/killable/-/killable-1.0.1.tgz#4c8ce441187a061c7474fb87ca08e2a638194892"
