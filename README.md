@@ -43,7 +43,7 @@ Para resolver esse problema, a *store* da aplicação foi organizada da seguinte
 - Após isso, o mesmo worker verifica se há dados faltantes para a ação e dispara um novo evento que chama uma saga de atualização;
 - A saga de atualização acessa uma API externa para adquirir os dados;
 
-Nesse último passo, acabei optando usar dados mockados. A integração com API's externas funciona bem, mas o modelo de buscar ação por ação tornaria a aplicação pouco escalável. Fora que que aplicação atingiu o limite de requests das API's externas bem rápido.
+Nesse último passo, acabei optando usar dados mockados. A integração com API's externas funciona bem, mas o modelo de buscar ação por ação tornaria a aplicação pouco escalável. Fora que aplicação atingiu o limite de requests das API's externas bem rápido.
 
 *Todo esse processo pode ser visto em: index.tsx e pages/StockOptions/stocks.logic.ts*
 
