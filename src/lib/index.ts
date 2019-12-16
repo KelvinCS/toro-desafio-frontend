@@ -26,7 +26,7 @@ export const removeLastChar = (value: string) => value.slice(0, -1);
  * of the stock, given the history range
  * @param stock object stock containing the price history
  */
-const calcStockPriceIncrease = (stock: Stock) => {
+export const calcStockPriceIncrease = (stock: Stock) => {
   const { price: openingPrice } = stock.history[0];
   const { price: lastPrice } = stock.history.slice(-1)[0];
 
