@@ -1,5 +1,5 @@
 import stocksName from "./stocks-name.mock.json";
-import { removeLastChar } from "../lib";
+import { removeLastChar } from "../../lib";
 
 const STOCK_IMAGES_URL =
   "https://cdn.toroinvestimentos.com.br/corretora/images/quote";
