@@ -17,6 +17,7 @@ interface Stock {
 
 const stocks = kea({
   actions: () => ({
+    newQuote: (quote: Quote) => quote,
     addNewQuote: (quote: Quote) => quote,
     updateStock: (stock: Stock) => stock,
     retrieveStockInfo: (ticker: string) => ({ ticker })
@@ -66,7 +67,7 @@ const stocks = kea({
   }),
 
   takeEvery: ({ actions, workers }) => ({
-    NEW_QUOTE: workers.newQuote,
+    [actions.newQuote]: workers.newQuote,
     [actions.retrieveStockInfo]: workers.retrieveStockInfo
   }),
 
