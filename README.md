@@ -96,7 +96,7 @@ Para rodar os testes
 
 ```
 
-> docker-compose run app_tests
+> docker-compose up app_tests
 
 ```
 
@@ -108,6 +108,6 @@ Rodando o storybook
 
 ```
 
-> docker-compose run app_storybook
+> docker-compose up app_storybook
 
 ```
