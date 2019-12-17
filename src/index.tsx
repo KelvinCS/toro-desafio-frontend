@@ -10,24 +10,12 @@ import styles from "./styles";
 
 import * as serviceWorker from "./serviceWorker";
 
-const socket = new WebSocket("ws://localhost:8080/quotes");
-
-function startWebsocketBridge() {
-  socket.onmessage = ({ data }) =>
-    store.dispatch({
-      type: "NEW_QUOTE",
-      payload: JSON.parse(data)
-    });
-}
-
 resetContext({
   createStore: true,
   plugins: [sagaPlugin({ useLegacyUnboundActions: true })]
 });
 
 const { store } = getContext();
-
-startWebsocketBridge();
 
 ReactDOM.render(
   <Provider store={store}>
