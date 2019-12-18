@@ -20,10 +20,17 @@ const stocks = kea({
     newQuote: (quote: Quote) => quote,
     addNewQuote: (quote: Quote) => quote,
     updateStock: (stock: Stock) => stock,
-    retrieveStockInfo: (ticker: string) => ({ ticker })
+    retrieveStockInfo: (ticker: string) => ({ ticker }),
+    connectionError: error => ({ error })
   }),
 
   reducers: ({ actions }) => ({
+    connectionError: [
+      {},
+      {
+        [actions.connectionError]: (_, { error }) => error
+      }
+    ],
     stocksMap: [
       {},
       {
