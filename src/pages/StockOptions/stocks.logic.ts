@@ -17,18 +17,18 @@ interface Stock {
 
 const stocks = kea({
   actions: () => ({
-    newQuote: (quote: Quote) => quote,
+    newQuote: (rawQuote: any) => rawQuote,
     addNewQuote: (quote: Quote) => quote,
     updateStock: (stock: Stock) => stock,
     retrieveStockInfo: (ticker: string) => ({ ticker }),
-    connectionError: error => ({ error })
+    connectionError: payload => payload
   }),
 
   reducers: ({ actions }) => ({
     connectionError: [
       {},
       {
-        [actions.connectionError]: (_, { error }) => error
+        [actions.connectionError]: (_, payload) => payload
       }
     ],
     stocksMap: [
